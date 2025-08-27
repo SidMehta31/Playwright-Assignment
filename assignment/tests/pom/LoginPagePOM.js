@@ -7,7 +7,7 @@ class LoginPage {
   }
 
   async gotoLogin() {
-    await this.page.goto('https://shop.qaautomationlabs.com/login.php')
+    await this.page.goto('https://shop.qaautomationlabs.com')
   }
 
   async login(email, password) {
@@ -16,4 +16,5 @@ class LoginPage {
     await this.page.click(this.loginButton)
   }
 }
+
 module.exports = { LoginPage }
