@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test')
-const { MensWearPage } = require('../../pages/productListingPOM')
-const { LoginPage } = require('../../pages/LoginPagePOM')
-const { saveData } = require('../../utils/fileHelper')
+const { MensWearPage } = require('../pom/productListingPOM')
+const { LoginPage } = require('../pom/LoginPagePOM')
+const { saveData } = require('../utils/fileHelper')
 
 test('Add product to cart', async ({ page }) => {
   const loginPage = new LoginPage(page)
@@ -17,4 +17,5 @@ test('Add product to cart', async ({ page }) => {
 
   // Save cart info
   saveData('cart-output.json', { cartCount })
+
 });
