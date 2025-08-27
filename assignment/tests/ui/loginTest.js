@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test')
-const { LoginPage } = require('../../POM/LoginPagePOM')
-const { saveData } = require('../../utils/fileHelper')
+const { LoginPage } = require('../pom/LoginPagePOM')
+const { saveData } = require('../utils/fileHelper')
 
 test('Login with valid credentials', async ({ page }) => {
   const loginPage = new LoginPage(page)
@@ -11,4 +11,5 @@ test('Login with valid credentials', async ({ page }) => {
 
   // Save outcome
   saveData('login-output.json', { status: 'Login Successful' });
+
 })
