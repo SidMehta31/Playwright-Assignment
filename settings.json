@@ -1,6 +1,0 @@
-{
-  "executionMode": "parallel", 
-  "headed": true,
-  "baseURL": "https://www.saucedemo.com/",
-  "authToken": "YOUR_AUTH_TOKEN"
-}
